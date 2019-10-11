@@ -1,0 +1,79 @@
+\documentclass{report}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{import}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{nameref}
+\usepackage[english]{babel}
+
+\usepackage[
+backend=biber,
+style=ieee,
+sorting=ynt,
+maxbibnames=3,
+citestyle=numeric-comp
+]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    citecolor=cyan,
+    urlcolor=cyan,
+}
+\usepackage[acronym,nonumberlist]{glossaries}
+\usepackage{dirtytalk}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=4cm,top=2cm,bottom=3cm]{geometry}
+\graphicspath{{figures/}}
+
+\title{ \textbf{Master Thesis} }
+\author{Rafał Rolczyński}
+\date{Warszawa, September 2018}
+
+\makeglossaries
+\newacronym{hmm}{HMM}{Hidden Markov Model}
+\newacronym{asr}{ASR}{Automatic Speech Recognition}
+\newacronym{ann}{ANN}{Artificial Neural Network}
+\newacronym{dnn}{DNN}{Deep Neural Network}
+\newacronym{rnn}{RNN}{Recurrent Neural Network}
+\newacronym{cnn}{CNN}{Convolutional Neural Network}
+\newacronym{fnn}{FNN}{Feedforward Neural Network}
+\newacronym{fc}{FC}{Fully Connected}
+\newacronym{lstm}{LSTM}{Long short-term memory}
+\newacronym{mse}{MSE}{Mean Squared Error}
+\newacronym{ols}{OLS}{Ordinary Least Squares}
+\newacronym{ctc}{CTC}{Connectionist Temporal Classification}
+\newacronym{las}{LAS}{Listen, Attend and Spell}
+\newacronym{sgd}{SGD}{Stochastic Gradient Descent}
+
+\begin{document}
+\input{title-en}
+\input{abstract-en}
+%\input{title-pl}
+%\input{abstract-pl}
+
+\renewcommand{\baselinestretch}{1.2}\normalsize
+\tableofcontents
+\renewcommand{\baselinestretch}{1.5}\normalsize
+
+\printglossary[type=\acronymtype]
+\printglossary
+
+\import{chapters/}{chapter-1.tex}
+\import{chapters/}{chapter-2.tex}
+\import{chapters/}{chapter-3.tex}
+\import{chapters/}{chapter-4.tex}
+\import{chapters/}{chapter-5.tex}
+\import{chapters/}{chapter-6.tex}
+\import{chapters/}{chapter-7.tex}
+\import{chapters/}{chapter-8.tex}
+
+\listoftables
+\listoffigures
+\printbibliography
+\end{document}

@@ -1,0 +1,126 @@
+
+\chapter{Introduction}\label{ch:introduction}
+
+Communication is a primary human need, and speaking is the most natural
+and fundamental form of communication complementary by eye contact, facial expressions, and body language.
+Even before the digital era, humans try to process speech information automatically~\cite{juang2004,deller2000},
+what in consequence leads to form the \textit{speech processing} domain.
+The \textit{speech processing}, in general, can be divided into key components: \textit{synthesis},
+\textit{recognition}, and \textit{coding}.
+Among those, the recognition deals with basic information that speech provides such as
+language (\textit{language identification}), message of words (\textit{speech recognition}), and
+detailed information about the speaker, for instance, the speaker's emotions and gender (\textit{speaker recognition}).
+Nowadays, the voice is becoming more and more often a point of interest of various information systems,
+including \textit{intelligent assistance} in mobile phones, \textit{in-car systems} and numerous
+documenting and monitoring systems (court, health service, or call center).
+Each application, where the voice is in interest, has the core component which is
+the \textit{Automatic Speech Recognition} (\acrshort{asr}) system.
+The goal of \acrshort{asr} is to predict the correct transcription based on the given audio data.
+
+The automatic speech processing began in the 1930s, although the first
+more widely used \acrshort{asr} systems appeared in the '70s~\cite{juang2004,lowerre1976}.
+Initially, speech recognition systems could not recognize more than a few hundred words, and
+often required the breaks between words spoken in sequence.
+The accelerated development of computers in the '90s has resulted in several complex \acrshort{asr} systems
+based on \textit{Hidden Markov Models} (\acrshort{hmm})~\cite{juang2004}.
+In those days, speech recognition systems are composed of many stages, including
+hand-crafted process of features extraction, and mentioned models \acrshort{hmm}.
+Each of the components required fine-tuning, so in consequence, the entire process of building
+such system is time-consuming and required expertise.
+These systems are inflexible, so any change required the long re-adjustments.
+
+Despite the significant improvements, the \acrshort{asr} systems could not compete with the humans quality
+of speech recognition.
+A breakthrough in speech recognition is the application of \textit{Deep Neural Networks} (\acrshort{dnn})
+at the beginning of the XXI century.
+In the first phase, deep learning algorithms play a limited role as acoustic models,
+or language models to rescore results~\cite{bourlard1993,renals1994,ellis1999}.
+The situation is changed when an automatic speech recognition system fully based on
+the \textit{Recurrent Neural Network} (\acrshort{rnn}) is introduced in 2014~\cite{graves2014}.
+Unlike traditional systems based on \acrshort{hmm}, the entire process of automatic speech recognition is
+accomplished \textit{end-to-end} by a single deep neural network.
+The key idea is to use the \textit{Connectionist Temporal Classification} (\acrshort{ctc}) algorithm~\cite{graves2006},
+which enables either to train a model or to do inference.
+Next presented \acrshort{ctc} based models are systems named \textit{Deep~Speech} and \textit{Deep~Speech~2}~\cite{hannun2014,amodei2015},
+A huge dataset, a modified model architecture and an efficient optimization process enable \textit{Deep~Speech~2}
+to achieve impressive results for both English and Mandarin.
+
+Nowadays, speech recognition is an active research field, where various
+deep neural architectures are explored.
+One of the remarkable architecture is the model \textit{Listen, Attend and Spell} (\acrshort{las})~\cite{chan2015}, which
+is based on the \texti{Sequence-to-Sequence} concept~\cite{cho2014}.
+The \acrshort{las} is the speech recognition system \textit{end-to-end}, which
+is composed of an encoder, a decoder, and an attention mechanism~\cite{bahdanau2014,chan2015}.
+As the \acrshort{ctc} based models, the \texti{Sequence-to-Sequence} models also use an external
+static n-gram language model to correct minor language mistakes.
+Moreover, there are more sophisticated approaches, where an external language model is internally integrated~\cite{gulcehre2015,chorowski2016,sriram2018}.
+The vanilla \texti{Sequence-to-Sequence} models, due to the working principle of the encoder-decoder pair,
+require a priori the whole sequence of input data to be able to perform a prediction.
+Therefore, the use of the \textit{Sequence-to-Sequence} models, in particular during online inferences,
+can be more difficult.
+
+The success of the presented models is based on a large amount of data and an infrastructure
+which is capable of optimizing the model in a reasonable time of several days.
+The aforementioned models have been trained on data sets ranging from a few to tens of thousands of hours.
+Unfortunately, access to the data is severely limited.
+The vast majority of transcribed audio datasets are closed, for less popular languages in particular.
+Furthermore, obtaining a manual transcription of audio corpora is laborious and costly, and furthermore,
+beside efforts, a high human transcribing error rate persists.
+As a result, the development of both research and new commercial solutions,
+in speech recognition is limited, even though the weakly supervised and the unsupervised methods
+are explored~\cite{chaabouni2017,chung2018,el-geish2019}
+
+The training dataset can be extended using synthetic audio data generated by \textit{Text-to-Speech} models.
+This approach with success is a widely used technique of data augmentation~\cite{li2018,jia2019,li2019,kuchaiev2018}.
+Unfortunately, the improvement exists only up to the ratio 1 to 1, rich training data to synthetic data.
+Adding more synthetic data to a training dataset has the opposite effect, and the efficiency of the system declines.
+In this thesis, we hypothesize that \acrshort{asr} systems can benefit from much larger synthesized corpora.
+We present the \textit{Synthetic~Boosted~Model}.
+The model uses the synthetic data to enrich the language information thanks to
+the new model architecture, the new objective function, and the new training policy.
+
+\section{Thesis Outline}\label{sec:thesis-outline}
+
+The thesis is organized into 8 chapters, which are described as follows:
+
+\vspace{0.2cm}
+\noindent\textbf{Chapter 1}\hspace{0.2cm} The current chapter provides general information about our research
+interest, speech recognition, and its related context.
+
+\vspace{0.2cm}
+\noindent\textbf{Chapter 2}\hspace{0.2cm} This chapter revises fundamental knowledge required to understand
+the key concepts presented in our work.
+Important topics are signal representations, recurrent neural networks,
+and the \textit{Connectionist Temporal Classification}.
+
+\vspace{0.2cm}
+\noindent\textbf{Chapter 3}\hspace{0.2cm} This chapter shows the available corpus,
+and describes how the data pre-processing is done.
+We analyze corpus with particular care before starting to explore different models.
+We introduce the audio representation, the dataset construction, and the data augmentation method.
+
+\vspace{0.2cm}
+\noindent\textbf{Chapter 4}\hspace{0.2cm} In this chapter we present two model architectures:
+the \textit{Base~Model} as the state-of-the-art baseline for further experiments, and
+the novel \textit{Synthetic~Boosted~Model}, which uses synthetic data to enrich language information.
+Both architectures are described in detail.
+
+\vspace{0.2cm}
+\noindent\textbf{Chapter 5}\hspace{0.2cm} This chapter presents the model and the system optimizations.
+The aim is to find the model parameters which minimize the objective function.
+To do so, we introduce not only the optimization method and its parameters, but also
+the series of system adjustments.
+
+\vspace{0.2cm}
+\noindent\textbf{Chapter 6}\hspace{0.2cm} This chapter presents the experiments results
+and conclusions.
+We adapt the \textit{Base~Model} architecture to the task conditions, and then
+the \textit{Synthetic~Boosted~Model} is explored.
+
+\vspace{0.2cm}
+\noindent\textbf{Chapter 7}\hspace{0.2cm} In this chapter we do the evaluation on the hold-out dataset,
+exclusively for the previously selected models.
+
+\vspace{0.2cm}
+\noindent\textbf{Chapter 8}\hspace{0.2cm} This chapter serves as a summary of our work as well as future
+directions.

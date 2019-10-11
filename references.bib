@@ -1,0 +1,911 @@
+
+@article{park2019,
+  title = {{{SpecAugment}}: {{A Simple Data Augmentation Method}} for {{Automatic Speech Recognition}}},
+  url = {http://arxiv.org/abs/1904.08779},
+  abstract = {We present SpecAugment, a simple data augmentation method for speech recognition. SpecAugment is applied directly to the feature inputs of a neural network (i.e., filter bank coefficients). The augmentation policy consists of warping the features, masking blocks of frequency channels, and masking blocks of time steps. We apply SpecAugment on Listen, Attend and Spell networks for end-to-end speech recognition tasks. We achieve state-of-the-art performance on the LibriSpeech 960h and Swichboard 300h tasks, outperforming all prior work. On LibriSpeech, we achieve 6.8\% WER on test-other without the use of a language model, and 5.8\% WER with shallow fusion with a language model. This compares to the previous state-of-the-art hybrid system of 7.5\% WER. For Switchboard, we achieve 7.2\%/14.6\% on the Switchboard/CallHome portion of the Hub5'00 test set without the use of a language model, and 6.8\%/14.1\% with shallow fusion, which compares to the previous state-of-the-art hybrid system at 8.3\%/17.3\% WER.},
+  date = {2019-04},
+  author = {Park, Daniel S. and Chan, William and Zhang, Yu and Chiu, Chung-Cheng and Zoph, Barret and Cubuk, Ekin D. and Le, Quoc V.},
+  file = {/Users/rolczynski/Documents/Library/2019/Park - 2019 - SpecAugment.pdf}
+}
+
+@article{zweig2016,
+  title = {Advances in {{All}}-{{Neural Speech Recognition}}},
+  url = {http://arxiv.org/abs/1609.05935},
+  abstract = {This paper advances the design of CTC-based all-neural (or end-to-end) speech recognizers. We propose a novel symbol inventory, and a novel iterated-CTC method in which a second system is used to transform a noisy initial output into a cleaner version. We present a number of stabilization and initialization methods we have found useful in training these networks. We evaluate our system on the commonly used NIST 2000 conversational telephony test set, and significantly exceed the previously published performance of similar systems, both with and without the use of an external language model and decoding technology.},
+  date = {2016-09},
+  author = {Zweig, G. and Yu, C. and Droppo, J. and Stolcke, A.},
+  file = {/Users/rolczynski/Documents/Library/2016/Zweig - 2016 - Advances in All-Neural Speech Recognition.pdf}
+}
+
+@article{hannun2014,
+  title = {Deep {{Speech}}: {{Scaling}} up End-to-End Speech Recognition},
+  url = {http://arxiv.org/abs/1412.5567},
+  abstract = {We present a state-of-the-art speech recognition system developed using end-to-end deep learning. Our architecture is significantly simpler than traditional speech systems, which rely on laboriously engineered processing pipelines; these traditional systems also tend to perform poorly when used in noisy environments. In contrast, our system does not need hand-designed components to model background noise, reverberation, or speaker variation, but instead directly learns a function that is robust to such effects. We do not need a phoneme dictionary, nor even the concept of a "phoneme." Key to our approach is a well-optimized RNN training system that uses multiple GPUs, as well as a set of novel data synthesis techniques that allow us to efficiently obtain a large amount of varied data for training. Our system, called Deep Speech, outperforms previously published results on the widely studied Switchboard Hub5'00, achieving 16.0\% error on the full test set. Deep Speech also handles challenging noisy environments better than widely used, state-of-the-art commercial speech systems.},
+  date = {2014},
+  pages = {1--12},
+  author = {Hannun, Awni and Case, Carl and Casper, Jared and Catanzaro, Bryan},
+  file = {/Users/rolczynski/Documents/Library/2014/Hannun - 2014 - Deep Speech.pdf}
+}
+
+@article{li2018,
+  title = {Training {{Neural Speech Recognition Systems}} with {{Synthetic Speech Augmentation}}},
+  url = {http://arxiv.org/abs/1811.00707},
+  abstract = {Building an accurate automatic speech recognition (ASR) system requires a large dataset that contains many hours of labeled speech samples produced by a diverse set of speakers. The lack of such open free datasets is one of the main issues preventing advancements in ASR research. To address this problem, we propose to augment a natural speech dataset with synthetic speech. We train very large end-to-end neural speech recognition models using the LibriSpeech dataset augmented with synthetic speech. These new models achieve state of the art Word Error Rate (WER) for character-level based models without an external language model.},
+  date = {2018-11},
+  author = {Li, Jason and Gadde, Ravi and Ginsburg, Boris and Lavrukhin, Vitaly},
+  file = {/Users/rolczynski/Documents/Library/2018/Li - 2018 - Training Neural Speech Recognition Systems with Synthetic Speech Augmentation.pdf}
+}
+
+@article{han2017,
+  title = {The {{CAPIO}} 2017 {{Conversational Speech Recognition System}}},
+  url = {http://arxiv.org/abs/1801.00059},
+  abstract = {In this paper we show how we have achieved the state-of-the-art performance on the industry-standard NIST 2000 Hub5 English evaluation set. We explore densely connected LSTMs, inspired by the densely connected convolutional networks recently introduced for image classification tasks. We also propose an acoustic model adaptation scheme that simply averages the parameters of a seed neural network acoustic model and its adapted version. This method was applied with the CallHome training corpus and improved individual system performances by on average 6.1\% (relative) against the CallHome portion of the evaluation set with no performance loss on the Switchboard portion. With RNN-LM rescoring and lattice combination on the 5 systems trained across three different phone sets, our 2017 speech recognition system has obtained 5.0\% and 9.1\% on Switchboard and CallHome, respectively, both of which are the best word error rates reported thus far. According to IBM in their latest work to compare human and machine transcriptions, our reported Switchboard word error rate can be considered to surpass the human parity (5.1\%) of transcribing conversational telephone speech.},
+  date = {2017-12},
+  author = {Han, Kyu J. and Chandrashekaran, Akshay and Kim, Jungsuk and Lane, Ian},
+  file = {/Users/rolczynski/Documents/Library/2017/Han - 2017 - The CAPIO 2017 Conversational Speech Recognition System.pdf}
+}
+
+@article{amodei2015,
+  title = {Deep {{Speech}} 2: {{End}}-to-{{End Speech Recognition}} in {{English}} and {{Mandarin}}},
+  url = {http://arxiv.org/abs/1512.02595},
+  abstract = {We show that an end-to-end deep learning approach can be used to recognize either English or Mandarin Chinese speech–two vastly different languages. Because it replaces entire pipelines of hand-engineered components with neural networks, end-to-end learning allows us to handle a diverse variety of speech including noisy environments, accents and different languages. Key to our approach is our application of HPC techniques, resulting in a 7x speedup over our previous system. Because of this efficiency, experiments that previously took weeks now run in days. This enables us to iterate more quickly to identify superior architectures and algorithms. As a result, in several cases, our system is competitive with the transcription of human workers when benchmarked on standard datasets. Finally, using a technique called Batch Dispatch with GPUs in the data center, we show that our system can be inexpensively deployed in an online setting, delivering low latency when serving users at scale.},
+  date = {2015},
+  pages = {1--28},
+  author = {Amodei, Dario and Anubhai, Rishita and Battenberg, Eric and Case, Carl},
+  file = {/Users/rolczynski/Documents/Library/2015/Amodei - 2015 - Deep Speech 2.pdf}
+}
+
+@article{sriram2018,
+  title = {Cold Fusion: {{Training Seq2seq}} Models Together with Language Models},
+  volume = {2018-Septe},
+  issn = {19909772},
+  doi = {10.21437/Interspeech.2018-1392},
+  abstract = {Sequence-to-sequence (Seq2Seq) models with attention have excelled at tasks which involve generating natural language sentences such as machine translation, image captioning and speech recognition. Performance has further been improved by leveraging unlabeled data, often in the form of a language model. In this work, we present the Cold Fusion method, which leverages a pre-trained language model during training, and show its effectiveness on the speech recognition task. We show that Seq2Seq models with Cold Fusion are able to better utilize language information enjoying i) faster convergence and better generalization, and ii) almost complete transfer to a new domain while using less than 10\% of the labeled training data.},
+  journaltitle = {Proceedings of the Annual Conference of the International Speech Communication Association, INTERSPEECH},
+  date = {2018},
+  pages = {387--391},
+  author = {Sriram, Anuroop and Jun, Heewoo and Satheesh, Sanjeev and Coates, Adam},
+  file = {/Users/rolczynski/Documents/Library/2018/Sriram - 2018 - Cold fusion.pdf}
+}
+
+@article{battenberg2018,
+  title = {Exploring Neural Transducers for End-to-End Speech Recognition},
+  volume = {2018-Janua},
+  doi = {10.1109/ASRU.2017.8268937},
+  abstract = {In this work, we perform an empirical comparison among the CTC, RNN-Transducer, and attention-based Seq2Seq models for end-to-end speech recognition. We show that, without any language model, Seq2Seq and RNN-Transducer models both outperform the best reported CTC models with a language model, on the popular Hub5'00 benchmark. On our internal diverse dataset, these trends continue - RNNTransducer models rescored with a language model after beam search outperform our best CTC models. These results simplify the speech recognition pipeline so that decoding can now be expressed purely as neural network operations. We also study how the choice of encoder architecture affects the performance of the three models - when all encoder layers are forward only, and when encoders downsample the input representation aggressively.},
+  journaltitle = {2017 IEEE Automatic Speech Recognition and Understanding Workshop, ASRU 2017 - Proceedings},
+  date = {2018},
+  pages = {206--213},
+  author = {Battenberg, Eric and Chen, Jitong and Child, Rewon and Coates, Adam and Li, Yashesh Gaur Yi and Liu, Hairong and Satheesh, Sanjeev and Sriram, Anuroop and Zhu, Zhenyao},
+  file = {/Users/rolczynski/Documents/Library/2018/Battenberg - 2018 - Exploring neural transducers for end-to-end speech recognition.pdf}
+}
+
+@article{zeyer2018,
+  title = {Improved Training of End-to-End Attention Models for Speech Recognition},
+  url = {http://arxiv.org/abs/1805.03294},
+  abstract = {Sequence-to-sequence attention-based models on subword units allow simple open-vocabulary end-to-end speech recognition. In this work, we show that such models can achieve competitive results on the Switchboard 300h and LibriSpeech 1000h tasks. In particular, we report the state-of-the-art word error rates (WER) of 3.54\% on the dev-clean and 3.82\% on the test-clean evaluation subsets of LibriSpeech. We introduce a new pretraining scheme by starting with a high time reduction factor and lowering it during training, which is crucial both for convergence and final performance. In some experiments, we also use an auxiliary CTC loss function to help the convergence. In addition, we train long short-term memory (LSTM) language models on subword units. By shallow fusion, we report up to 27\% relative improvements in WER over the attention baseline without a language model.},
+  date = {2018-05},
+  author = {Zeyer, Albert and Irie, Kazuki and Schlüter, Ralf and Ney, Hermann},
+  file = {/Users/rolczynski/Documents/Library/2018/Zeyer - 2018 - Improved training of end-to-end attention models for speech recognition.pdf}
+}
+
+@article{tjandra2017,
+  title = {Listening While {{Speaking}}: {{Speech Chain}} by {{Deep Learning}}},
+  url = {http://arxiv.org/abs/1707.04879},
+  abstract = {Despite the close relationship between speech perception and production, research in automatic speech recognition (ASR) and text-to-speech synthesis (TTS) has progressed more or less independently without exerting much mutual influence on each other. In human communication, on the other hand, a closed-loop speech chain mechanism with auditory feedback from the speaker's mouth to her ear is crucial. In this paper, we take a step further and develop a closed-loop speech chain model based on deep learning. The sequence-to-sequence model in close-loop architecture allows us to train our model on the concatenation of both labeled and unlabeled data. While ASR transcribes the unlabeled speech features, TTS attempts to reconstruct the original speech waveform based on the text from ASR. In the opposite direction, ASR also attempts to reconstruct the original text transcription given the synthesized speech. To the best of our knowledge, this is the first deep learning model that integrates human speech perception and production behaviors. Our experimental results show that the proposed approach significantly improved the performance more than separate systems that were only trained with labeled data.},
+  date = {2017-07},
+  author = {Tjandra, Andros and Sakti, Sakriani and Nakamura, Satoshi},
+  file = {/Users/rolczynski/Documents/Library/2017/Tjandra - 2017 - Listening while Speaking.pdf}
+}
+
+@article{kim2017,
+  title = {Residual {{LSTM}}: {{Design}} of a {{Deep Recurrent Architecture}} for {{Distant Speech Recognition}}},
+  url = {http://arxiv.org/abs/1701.03360},
+  abstract = {In this paper, a novel architecture for a deep recurrent neural network, residual LSTM is introduced. A plain LSTM has an internal memory cell that can learn long term dependencies of sequential data. It also provides a temporal shortcut path to avoid vanishing or exploding gradients in the temporal domain. The residual LSTM provides an additional spatial shortcut path from lower layers for efficient training of deep networks with multiple LSTM layers. Compared with the previous work, highway LSTM, residual LSTM separates a spatial shortcut path with temporal one by using output layers, which can help to avoid a conflict between spatial and temporal-domain gradient flows. Furthermore, residual LSTM reuses the output projection matrix and the output gate of LSTM to control the spatial information flow instead of additional gate networks, which effectively reduces more than 10\% of network parameters. An experiment for distant speech recognition on the AMI SDM corpus shows that 10-layer plain and highway LSTM networks presented 13.7\% and 6.2\% increase in WER over 3-layer aselines, respectively. On the contrary, 10-layer residual LSTM networks provided the lowest WER 41.0\%, which corresponds to 3.3\% and 2.8\% WER reduction over plain and highway LSTM networks, respectively.},
+  date = {2017-01},
+  author = {Kim, Jaeyoung and El-Khamy, Mostafa and Lee, Jungwon},
+  file = {/Users/rolczynski/Documents/Library/2017/Kim - 2017 - Residual LSTM.pdf}
+}
+
+@inproceedings{igras2013,
+  langid = {english},
+  location = {{Reykjavík, Iceland}},
+  title = {Length of {{Phonemes}} in a {{Context}} of Their {{Positions}} in {{Polish Sentences}}},
+  isbn = {978-989-8565-74-7},
+  url = {http://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0004503500590064},
+  shorttitle = {Length of {{Phonemes}} in a {{Context}} of Their {{Positions}} in {{Polish Sentences}}},
+  eventtitle = {International {{Conference}} on {{Signal Processing}} and {{Multimedia Applications}}},
+  booktitle = {Proceedings of the 10th {{International Conference}} on {{Signal Processing}} and {{Multimedia Applications}} and 10th {{International Conference}} on {{Wireless Information Networks}} and {{Systems}}},
+  publisher = {{SCITEPRESS - Science and and Technology Publications}},
+  date = {2013},
+  pages = {59-64},
+  author = {Igras, Magdalena and Zio ́łko, Bartosz},
+  file = {/Users/rolczynski/Documents/Library/2013/Igras - 2013 - Length of Phonemes in a Context of their Positions in Polish Sentences2.pdf}
+}
+
+@article{kingma2014,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1412.6980},
+  primaryClass = {cs},
+  langid = {english},
+  title = {Adam: {{A Method}} for {{Stochastic Optimization}}},
+  url = {http://arxiv.org/abs/1412.6980},
+  shorttitle = {Adam},
+  abstract = {We introduce Adam, an algorithm for ﬁrst-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efﬁcient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the inﬁnity norm.},
+  urldate = {2019-10-10},
+  date = {2014-12-22},
+  keywords = {Computer Science - Machine Learning},
+  author = {Kingma, Diederik P. and Ba, Jimmy},
+  file = {/Users/rolczynski/Documents/Library/2014/Kingma and Ba - 2014 - Adam A Method for Stochastic Optimization.pdf}
+}
+
+@article{ganin2015,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1505.07818},
+  primaryClass = {cs, stat},
+  langid = {english},
+  title = {Domain-{{Adversarial Training}} of {{Neural Networks}}},
+  url = {http://arxiv.org/abs/1505.07818},
+  abstract = {We introduce a new representation learning approach for domain adaptation, in which data at training and test time come from similar but diﬀerent distributions. Our approach is directly inspired by the theory on domain adaptation suggesting that, for eﬀective domain transfer to be achieved, predictions must be made based on features that cannot discriminate between the training (source) and test (target) domains.},
+  urldate = {2019-10-10},
+  date = {2015-05-28},
+  keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning},
+  author = {Ganin, Yaroslav and Ustinova, Evgeniya and Ajakan, Hana and Germain, Pascal and Larochelle, Hugo and Laviolette, François and Marchand, Mario and Lempitsky, Victor},
+  file = {/Users/rolczynski/Documents/Library/2015/Ganin - 2015 - Domain-Adversarial Training of Neural Networks.pdf}
+}
+
+@inproceedings{demenko2008,
+  title = {{{JURISDIC}}: {{Polish Speech Database}} for {{Taking Dictation}} of {{Legal Texts}}},
+  shorttitle = {{{JURISDIC}}},
+  abstract = {The paper provides an overview of the Polish Speech Database for taking dictation of legal texts, created for the purpose of LVCSR system for Polish. It presents background information about the design of the database and the requirements coming from its future uses. The applied method of the text corpora construction is presented as well as the database structure and recording scenarios. The most important details on the recording conditions and equipment are specified, followed by the description of the assessment methodology of recording quality, and the annotation specification and evaluation. Additionally, the paper contains current statistics from the database and the information about both the ongoing and planned stages of the database development process.},
+  booktitle = {{{LREC}}},
+  date = {2008},
+  keywords = {Speech analytics,Speech corpus,Text corpus,Vocabulary},
+  author = {Demenko, Grazyna and Grocholewski, Stefan and Klessa, Katarzyna and Ogórkiewicz, Jerzy and Wagner, Agnieszka and Lange, Marek and Sledzinski, Daniel and Cylwik, Natalia},
+  file = {/Users/rolczynski/Documents/Library/2008/Demenko et al. - 2008 - JURISDIC Polish Speech Database for Taking Dictat.pdf}
+}
+
+@inproceedings{heafield2011,
+  location = {{Edinburgh, Scotland}},
+  title = {{{KenLM}}: {{Faster}} and {{Smaller Language Model Queries}}},
+  shorttitle = {{{KenLM}}},
+  booktitle = {Proceedings of the {{Sixth Workshop}} on {{Statistical Machine Translation}}},
+  publisher = {{Association for Computational Linguistics}},
+  date = {2011-07},
+  pages = {187--197},
+  author = {Heafield, Kenneth},
+  file = {/Users/rolczynski/Documents/Library/2011/Heafield - 2011 - KenLM Faster and Smaller Language Model Queries.pdf}
+}
+
+@thesis{hannun2018,
+  title = {Transcribing Real-Valued Sequences with Deep Neural Networks},
+  date = {2018},
+  author = {Hannun, Awni},
+  file = {/Users/rolczynski/Documents/Library/2018/Hannun - 2018 - Transcribing real-valued sequences with deep neural networks.pdf;/Users/rolczynski/Zotero/storage/J58TZLDX/12375823.html}
+}
+
+@article{jastrzebski2017,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1711.04623},
+  primaryClass = {cs, stat},
+  langid = {english},
+  title = {Three {{Factors Influencing Minima}} in {{SGD}}},
+  url = {http://arxiv.org/abs/1711.04623},
+  abstract = {We investigate the dynamical and convergent properties of stochastic gradient descent (SGD) applied to Deep Neural Networks (DNNs). Characterizing the relation between learning rate, batch size and the properties of the ﬁnal minima, such as width or generalization, remains an open question. In order to tackle this problem we investigate the previously proposed approximation of SGD by a stochastic diﬀerential equation (SDE). We theoretically argue that three factors - learning rate, batch size and gradient covariance - inﬂuence the minima found by SGD. In particular we ﬁnd that the ratio of learning rate to batch size is a key determinant of SGD dynamics and of the width of the ﬁnal minima, and that higher values of the ratio lead to wider minima and often better generalization. We conﬁrm these ﬁndings experimentally. Further, we include experiments which show that learning rate schedules can be replaced with batch size schedules and that the ratio of learning rate to batch size is an important factor inﬂuencing the memorization process.},
+  urldate = {2019-10-10},
+  date = {2017-11-13},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition},
+  author = {Jastrzębski, Stanisław and Kenton, Zachary and Arpit, Devansh and Ballas, Nicolas and Fischer, Asja and Bengio, Yoshua and Storkey, Amos},
+  file = {/Users/rolczynski/Documents/Library/2017/Jastrzębski - 2017 - Three Factors Influencing Minima in SGD.pdf}
+}
+
+@article{iakushkin2018,
+  langid = {english},
+  title = {{{RUSSIAN}}-{{LANGUAGE SPEECH RECOGNITION SYSTEM BASED ON DEEPSPEECH}}},
+  abstract = {The paper examines the practical issues in developing a speech-to-text system using deep neural networks. The development of a Russian-language speech recognition system based on DeepSpeech architecture is described. The Mozilla company’s open source implementation of DeepSpeech for the English language was used as a starting point. The system was trained in a containerized environment using the Docker technology. It allowed to describe the entire process of component assembly from the source code, including a number of optimization techniques for CPU and GPU. Docker also allows to easily reproduce computation optimization tests on alternative infrastructures. We examined the use of TensorFlow XLA technology that optimizes linear algebra computations in the course of neural network training. The number of nodes in the internal layers of neural network was optimized based on the word error rate (WER) obtained on a test data set, having regard to GPU memory limitations. We studied the use of probabilistic language models with various maximum lengths of word sequences and selected the model that shows the best WER. Our study resulted in a Russian-language acoustic model having been trained based on a data set comprising audio and subtitles from YouTube video clips. The language model was built based on the texts of subtitles and publicly available Russian-language corpus of Wikipedia’s popular articles. The resulting system was tested on a data set consisting of audio recordings of Russian literature available on voxforge.com—the best WER demonstrated by the system was 18\%.},
+  date = {2018},
+  pages = {5},
+  author = {Iakushkin, O O and Fedoseev, G A and Shaleva, A S and Degtyarev, A B and Sedova, O S},
+  file = {/Users/rolczynski/Documents/Library/2018/Iakushkin - 2018 - RUSSIAN-LANGUAGE SPEECH RECOGNITION SYSTEM BASED ON DEEPSPEECH.pdf}
+}
+
+@thesis{korzinek2007,
+  title = {Hybrydowy {{System Automatycznego Rozpoznawania Mowy}} w {{Języku Polskim}}},
+  abstract = {Praca opisuje technologię używaną w nowoczesnych automatycznych systemach rozpoznawania mowy. Opisano tu wszystkie moduły systemu opartego na technologii hybrydowej HMM/ANN: od przetwarzania sygnału i ekstrakcji cech, poprzez dekodowanie, aż po gramatyki i model języka. Szczególny nacisk położono na niezbędne modyfikacje w celu przystosowania systemu do zawiłości języka polskiego. Praca opisuje też pewne eksperymenty i aplikacje, w których zastosowano opisany system.},
+  date = {2007-01-01},
+  author = {Koržinek, Danijel},
+  file = {/Users/rolczynski/Documents/Library/2007/Koržinek - 2007 - Hybrydowy System Automatycznego Rozpoznawania Mowy w Języku Polskim.pdf},
+  doi = {10.13140/RG.2.1.2668.2481}
+}
+
+@article{chan2015,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1508.01211},
+  primaryClass = {cs, stat},
+  langid = {english},
+  title = {Listen, {{Attend}} and {{Spell}}},
+  url = {http://arxiv.org/abs/1508.01211},
+  abstract = {We present Listen, Attend and Spell (LAS), a neural network that learns to transcribe speech utterances to characters. Unlike traditional DNN-HMM models, this model learns all the components of a speech recognizer jointly. Our system has two components: a listener and a speller. The listener is a pyramidal recurrent network encoder that accepts ﬁlter bank spectra as inputs. The speller is an attentionbased recurrent network decoder that emits characters as outputs. The network produces character sequences without making any independence assumptions between the characters. This is the key improvement of LAS over previous end-toend CTC models. On a subset of the Google voice search task, LAS achieves a word error rate (WER) of 14.1\% without a dictionary or a language model, and 10.3\% with language model rescoring over the top 32 beams. By comparison, the state-of-the-art CLDNN-HMM model achieves a WER of 8.0\%.},
+  date = {2015-08-05},
+  keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning,Computer Science - Computation and Language},
+  author = {Chan, William and Jaitly, Navdeep and Le, Quoc V. and Vinyals, Oriol},
+  file = {/Users/rolczynski/Documents/Library/2015/Chan - 2015 - Listen, Attend and Spell.pdf}
+}
+
+@article{laurent2015,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1510.01378},
+  primaryClass = {cs, stat},
+  langid = {english},
+  title = {Batch {{Normalized Recurrent Neural Networks}}},
+  url = {http://arxiv.org/abs/1510.01378},
+  abstract = {Recurrent Neural Networks (RNNs) are powerful models for sequential data that have the potential to learn long-term dependencies. However, they are computationally expensive to train and difﬁcult to parallelize. Recent work has shown that normalizing intermediate representations of neural networks can signiﬁcantly improve convergence rates in feedforward neural networks [1]. In particular, batch normalization, which uses mini-batch statistics to standardize features, was shown to signiﬁcantly reduce training time. In this paper, we show that applying batch normalization to the hidden-to-hidden transitions of our RNNs doesn’t help the training procedure. We also show that when applied to the input-to-hidden transitions, batch normalization can lead to a faster convergence of the training criterion but doesn’t seem to improve the generalization performance on both our language modelling and speech recognition tasks. All in all, applying batch normalization to RNNs turns out to be more challenging than applying it to feedforward networks, but certain variants of it can still be beneﬁcial.},
+  date = {2015-10-05},
+  keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning},
+  author = {Laurent, César and Pereyra, Gabriel and Brakel, Philémon and Zhang, Ying and Bengio, Yoshua},
+  file = {/Users/rolczynski/Documents/Library/2015/Laurent - 2015 - Batch Normalized Recurrent Neural Networks.pdf}
+}
+
+@article{bojanowski2016,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1607.04606},
+  primaryClass = {cs},
+  langid = {english},
+  title = {Enriching {{Word Vectors}} with {{Subword Information}}},
+  url = {http://arxiv.org/abs/1607.04606},
+  abstract = {Continuous word representations, trained on large unlabeled corpora are useful for many natural language processing tasks. Popular models that learn such representations ignore the morphology of words, by assigning a distinct vector to each word. This is a limitation, especially for languages with large vocabularies and many rare words. In this paper, we propose a new approach based on the skipgram model, where each word is represented as a bag of character n-grams. A vector representation is associated to each character n-gram; words being represented as the sum of these representations. Our method is fast, allowing to train models on large corpora quickly and allows us to compute word representations for words that did not appear in the training data. We evaluate our word representations on nine different languages, both on word similarity and analogy tasks. By comparing to recently proposed morphological word representations, we show that our vectors achieve state-of-the-art performance on these tasks.},
+  urldate = {2019-10-10},
+  date = {2016-07-15},
+  keywords = {Computer Science - Machine Learning,Computer Science - Computation and Language},
+  author = {Bojanowski, Piotr and Grave, Edouard and Joulin, Armand and Mikolov, Tomas},
+  file = {/Users/rolczynski/Documents/Library/2016/Bojanowski - 2016 - Enriching Word Vectors with Subword Information.pdf}
+}
+
+@thesis{wolter2017,
+  langid = {english},
+  title = {Building an End-to-End Speech Recognizer},
+  date = {2017},
+  author = {Wolter, Moritz},
+  file = {/Users/rolczynski/Documents/Library/2017/Wolter - 2017 - Building an end-to-end speech recognizer.pdf}
+}
+
+@thesis{do2015,
+  langid = {english},
+  title = {Neural {{Networks}} for {{Automatic Speaker}}, {{Language}} and {{Sex Identiﬁcation}}},
+  abstract = {Speaker recognition is a challenging task and has applications in many areas, such as access control or forensic science. On the other hand, in recent years, deep learning paradigm and its branch, deep neural networks have emerged as powerful machine learning techniques and achieved state-of-the-art in many ﬁelds of natural language processing and speech technology. Therefore, the aim of this work is to explore the capability of a deep neural network model, recurrent neural networks, in speaker recognition. Our proposed systems are evaluated on TIMIT corpus using speaker identiﬁcation task. In comparison with other systems in the same test conditions, our systems could not surpass reference ones due to the sparsity of validation data. In general, our experiments show that the best system conﬁguration is a combination of MFCCs with their dynamic features and a recurrent neural network model. We also experiment recurrent neural networks and convolutional neural networks in a simpler task, sex identiﬁcation, on the same TIMIT data.},
+  date = {2015},
+  author = {Do, Bich Ngoc},
+  file = {/Users/rolczynski/Documents/Library/2015/Do - 2015 - Neural Networks for Automatic Speaker, Language and Sex Identiﬁcation.pdf}
+}
+
+@article{korzinek2017,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1706.00245},
+  primaryClass = {cs},
+  title = {Polish {{Read Speech Corpus}} for {{Speech Tools}} and {{Services}}},
+  url = {http://arxiv.org/abs/1706.00245},
+  abstract = {This paper describes the speech processing activities conducted at the Polish consortium of the CLARIN project. The purpose of this segment of the project was to develop specific tools that would allow for automatic and semi-automatic processing of large quantities of acoustic speech data. The tools include the following: grapheme-to-phoneme conversion, speech-to-text alignment, voice activity detection, speaker diarization, keyword spotting and automatic speech transcription. Furthermore, in order to develop these tools, a large high-quality studio speech corpus was recorded and released under an open license, to encourage development in the area of Polish speech research. Another purpose of the corpus was to serve as a reference for studies in phonetics and pronunciation. All the tools and resources were released on the the Polish CLARIN website. This paper discusses the current status and future plans for the project.},
+  date = {2017-06-01},
+  keywords = {Computer Science - Computation and Language},
+  author = {Koržinek, Danijel and Marasek, Krzysztof and Brocki, Łukasz and Wołk, Krzysztof},
+  file = {/Users/rolczynski/Documents/Library/2017/Koržinek - 2017 - Polish Read Speech Corpus for Speech Tools and Services.pdf;/Users/rolczynski/Zotero/storage/84DC9AE9/1706.html}
+}
+
+@book{deller2000,
+  langid = {english},
+  title = {Discrete-{{Time Processing}} of {{Speech Signals}}},
+  isbn = {978-0-7803-5386-2},
+  abstract = {Commercial applications of speech processing and recognition are fast becoming a growth industry that will shape the next decade. Now students and practicing engineers of signal processing can find in a single volume the fundamentals essential to understanding this rapidly developing field. IEEE Press is pleased to publish a classic reissue of Discrete-Time Processing of Speech Signals. Specially featured in this reissue is the addition of valuable World Wide Web links to the latest speech data references.This landmark book offers a balanced discussion of both the mathematical theory of digital speech signal processing and critical contemporary applications. The authors provide a comprehensive view of all major modern speech processing areas: speech production physiology and modeling, signal analysis techniques, coding, enhancement, quality assessment, and recognition. You will learn the principles needed to understand advanced technologies in speech processing -- from speech coding for communications systems to biomedical applications of speech analysis and recognition.Ideal for self-study or as a course text, this far-reaching reference book offers an extensive historical context for concepts under discussion, end-of-chapter problems, and practical algorithms. Discrete-Time Processing of Speech Signals is the definitive resource for students, engineers, and scientists in the speech processing field.An Instructor's Manual presenting detailed solutions to all the problems in the book is available upon request from the Wiley Makerting Department.},
+  pagetotal = {944},
+  publisher = {{Wiley}},
+  date = {2000},
+  keywords = {Computers / Networking / General,Computers / Speech & Audio Processing,Technology / Engineering / Electrical,Technology & Engineering / Electrical,Technology & Engineering / Electronics / General,Technology & Engineering / Mechanical,Technology & Engineering / Telecommunications},
+  author = {Deller, John R. Jr and Hansen, John H. L. and Proakis, John G.},
+  eprinttype = {googlebooks}
+}
+
+@thesis{lowerre1976,
+  location = {{Pittsburgh, PA, USA}},
+  title = {The {{Harpy Speech Recognition System}}.},
+  institution = {{Carnegie Mellon University}},
+  type = {PhD Thesis},
+  date = {1976},
+  author = {Lowerre, Bruce T.},
+  file = {/Users/rolczynski/Documents/Library/1976/Lowerre - 1976 - THE HARPY SPEECH RECOGNITION SYSTEM.pdf}
+}
+
+@article{juang2004,
+  title = {Automatic {{Speech Recognition}} – {{A Brief History}} of the {{Technology Development Abstract}}},
+  abstract = {Designing a machine that mimics human behavior, particularly the capability of speaking naturally and responding properly to spoken language, has intrigued engineers and scientists for centuries. Since the 1930s, when Homer Dudley of Bell Laboratories proposed a system model for speech analysis and synthesis [1, 2], the problem of automatic speech recognition has been approached progressively, from a simple machine that responds to a small set of sounds to a sophisticated system that responds to fluently spoken natural language and takes into account the varying statistics of the language in which the speech is produced. Based on major advances in statistical modeling of speech in the 1980s, automatic speech recognition systems today find widespread application in tasks that require a human-machine interface, such as automatic call processing in the telephone network and query-based information systems that do things like provide updated travel information, stock price quotations, weather reports, etc. In this article, we review some major highlights in the research and development of automatic speech recognition during the last few decades so as to provide a technological perspective and an appreciation of the fundamental progress that has been made in this important area of information and communication technology.},
+  date = {2004},
+  author = {Juang, B. H. and Rabiner, Lawrence R.},
+  file = {/Users/rolczynski/Documents/Library/2004/Juang - 2004 - Automatic Speech Recognition – A Brief History of the Technology Development.pdf}
+}
+
+@book{bourlard1993,
+  location = {{Norwell, MA, USA}},
+  title = {Connectionist {{Speech Recognition}}: {{A Hybrid Approach}}},
+  isbn = {978-0-7923-9396-2},
+  shorttitle = {Connectionist {{Speech Recognition}}},
+  abstract = {From the Publisher:Connectionist Speech Recognition: A Hybrid Approach describes the theory and implementation of a method to incorporate neural network approaches into state-of-the-art continuous speech recognition systems based on Hidden Markov Models (HMMs) to improve their performance. In this framework, neural networks (and in particular, multilayer perceptrons or MLPs) have been restricted to well-defined subtasks of the whole system, i.e., HMM emission probability estimation and feature extraction. The book describes a successful five year international collaboration between the authors. The lessons learned form a case study that demonstrates how hybrid systems can be developed to combine neural networks with more traditional statistical approaches. The book illustrates both the advantages and limitations of neural networks in the framework of a statistical system. Using standard databases and comparing with some conventional approaches, it is shown that MLP probability estimation can improve recognition performance. Other approaches are discussed, though there is no such unequivocal experimental result for these methods. Connectionist Speech Recognition: A Hybrid Approach is of use to anyone intending to use neural networks for speech recognition or within the framework provided by an existing successful statistical approach. This includes research and development groups working in the field of speech recognition, both with standard and neural network approaches, as well as other pattern recognition and/or neural network researchers. This book is also suitable as a text for advanced courses on neural networks or speech processing.},
+  publisher = {{Kluwer Academic Publishers}},
+  date = {1993},
+  author = {Bourlard, Herve A. and Morgan, Nelson},
+  file = {/Users/rolczynski/Documents/Library/1993/Bourlard - 1993 - Connectionist Speech Recognition.pdf}
+}
+
+@article{renals1994,
+  title = {Connectionist Probability Estimators in {{HMM}} Speech Recognition},
+  volume = {2},
+  doi = {10.1109/89.260359},
+  abstract = {The authors are concerned with integrating connectionist networks into a hidden Markov model (HMM) speech recognition system. This is achieved through a statistical interpretation of connectionist networks as probability estimators. They review the basis of HMM speech recognition and point out the possible benefits of incorporating connectionist networks. Issues necessary to the construction of a connectionist HMM recognition system are discussed, including choice of connectionist probability estimator. They describe the performance of such a system using a multilayer perceptron probability estimator evaluated on the speaker-independent DARPA Resource Management database. In conclusion, they show that a connectionist component improves a state-of-the-art HMM system. {$>$}},
+  journaltitle = {IEEE Trans. Speech and Audio Processing},
+  date = {1994},
+  pages = {161-174},
+  keywords = {Speech recognition,Acoustic cryptanalysis,ChucK,Connectionism,Context-sensitive language,Correctness (computer science),Data point,Embedded system,Ensemble interpretation,Experiment,Hidden Markov model,König's lemma,Markov chain,Multilayer perceptron,Speaker recognition},
+  author = {Renals, Steve and Morgan, Nelson and Bourlard, Hervé and Cohen, Michael and Franco, Horacio},
+  file = {/Users/rolczynski/Documents/Library/1994/Renals - 1994 - Connectionist probability estimators in HMM speech recognition.pdf}
+}
+
+@inproceedings{ellis1999,
+  title = {Size Matters: An Empirical Study of Neural Network Training for Large Vocabulary Continuous Speech Recognition},
+  volume = {2},
+  doi = {10.1109/ICASSP.1999.759875},
+  shorttitle = {Size Matters},
+  abstract = {We have trained and tested a number of large neural networks for the purpose of emission probability estimation in large vocabulary continuous speech recognition. In particular, the problem under test is the DARPA Broadcast News task. Our goal here was to determine the relationship between training time, word error rate, size of the training set, and size of the neural network. In all cases, the network architecture was quite simple, comprising a single large hidden layer with an input window consisting of feature vectors from 9 frames around the current time, with a single output for each of 54 phonetic categories. Thus far, simultaneous increases to the size of the training set and the neural network improve performance; in other words, more data helps, as does the training of more parameters. We continue to be surprised that such a simple system works as well as it does for complex tasks. Given a limitation in training time, however, there appears to be an optimal ratio of training patterns to parameters of around 25:1 in these circumstances. Additionally, doubling the training data and system size appears to provide diminishing returns of error rate reduction for the largest systems.},
+  eventtitle = {1999 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}}, and {{Signal Processing}}. {{Proceedings}}. {{ICASSP99}} ({{Cat}}. {{No}}.{{99CH36258}})},
+  booktitle = {1999 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}}, and {{Signal Processing}}. {{Proceedings}}. {{ICASSP99}} ({{Cat}}. {{No}}.{{99CH36258}})},
+  date = {1999-03},
+  pages = {1013-1016 vol.2},
+  keywords = {Vocabulary,Computer science,Hidden Markov models,probability,speech recognition,Speech recognition,Artificial neural networks,DARPA Broadcast News task,emission probability estimation,Error analysis,error rate reduction,feature vectors,input window,large neural networks,large vocabulary continuous speech recognition,learning (artificial intelligence),Maximum likelihood estimation,multilayer perceptron,multilayer perceptrons,network architecture,neural network size,neural network training,Neural networks,optimal ratio,parameters,phonetic categories,single large hidden layer,Testing,training data,Training data,training patterns to parameters ratio,training set size,training time,word error rate},
+  author = {Ellis, D. and Morgan, N.},
+  file = {/Users/rolczynski/Documents/Library/1999/Ellis - 1999 - Size matters.pdf}
+}
+
+@inproceedings{graves2014,
+  title = {Towards {{End}}-to-End {{Speech Recognition}} with {{Recurrent Neural Networks}}},
+  url = {http://dl.acm.org/citation.cfm?id=3044805.3045089},
+  abstract = {This paper presents a speech recognition system that directly transcribes audio data with text, without requiring an intermediate phonetic representation. The system is based on a combination of the deep bidirectional LSTM recurrent neural network architecture and the Connectionist Temporal Classification objective function. A modification to the objective function is introduced that trains the network to minimise the expectation of an arbitrary transcription loss function. This allows a direct optimisation of the word error rate, even in the absence of a lexicon or language model. The system achieves a word error rate of 27.3\% on the Wall Street Journal corpus with no prior linguistic information, 21.9\% with only a lexicon of allowed words, and 8.2\% with a trigram language model. Combining the network with a baseline system further reduces the error rate to 6.7\%.},
+  booktitle = {Proceedings of the 31st {{International Conference}} on {{International Conference}} on {{Machine Learning}} - {{Volume}} 32},
+  series = {{{ICML}}'14},
+  publisher = {{JMLR.org}},
+  date = {2014},
+  pages = {II-1764--II-1772},
+  author = {Graves, Alex and Jaitly, Navdeep},
+  file = {/Users/rolczynski/Documents/Library/2014/Graves - 2014 - Towards End-to-end Speech Recognition with Recurrent Neural Networks.pdf},
+  venue = {Beijing, China}
+}
+
+@inproceedings{graves2006,
+  title = {Connectionist Temporal Classification: {{Labelling}} Unsegmented Sequence Data with Recurrent Neural 'networks},
+  volume = {2006},
+  doi = {10.1145/1143844.1143891},
+  shorttitle = {Connectionist Temporal Classification},
+  abstract = {Many real-world sequence learning tasks re- quire the prediction of sequences of labels from noisy, unsegmented input data. In speech recognition, for example, an acoustic signal is transcribed into words or sub-word units. Recurrent neural networks (RNNs) are powerful sequence learners that would seem well suited to such tasks. However, because they require pre-segmented training data, and post-processing to transform their out- puts into label sequences, their applicability has so far been limited. This paper presents a novel method for training RNNs to label un- segmented sequences directly, thereby solv- ing both problems. An experiment on the TIMIT speech corpus demonstrates its ad- vantages over both a baseline HMM and a hybrid HMM-RNN.},
+  eventtitle = {{{ICML}} 2006 - {{Proceedings}} of the 23rd {{International Conference}} on {{Machine Learning}}},
+  date = {2006-01-01},
+  pages = {369-376},
+  author = {Graves, Alex and Fernández, Santiago and Gomez, Faustino and Schmidhuber, Jürgen},
+  file = {/Users/rolczynski/Documents/Library/2006/Graves - 2006 - Connectionist temporal classification2.pdf}
+}
+
+@inproceedings{cho2014,
+  location = {{Doha, Qatar}},
+  title = {Learning {{Phrase Representations}} Using {{RNN Encoder}}–{{Decoder}} for {{Statistical Machine Translation}}},
+  doi = {10.3115/v1/D14-1179},
+  eventtitle = {{{EMNLP}} 2014},
+  booktitle = {Proceedings of the 2014 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}} ({{EMNLP}})},
+  publisher = {{Association for Computational Linguistics}},
+  date = {2014-10},
+  pages = {1724--1734},
+  author = {Cho, Kyunghyun and family=Merriënboer, given=Bart, prefix=van, useprefix=true and Gulcehre, Caglar and Bahdanau, Dzmitry and Bougares, Fethi and Schwenk, Holger and Bengio, Yoshua},
+  file = {/Users/rolczynski/Documents/Library/2014/Cho - 2014 - Learning Phrase Representations using RNN Encoder–Decoder for Statistical.pdf}
+}
+
+@inproceedings{pratap2019,
+  langid = {english},
+  location = {{Brighton, United Kingdom}},
+  title = {{{Wav2Letter}}++: {{A Fast Open}}-Source {{Speech Recognition System}}},
+  isbn = {978-1-4799-8131-1},
+  url = {https://ieeexplore.ieee.org/document/8683535/},
+  shorttitle = {{{Wav2Letter}}++},
+  abstract = {This paper introduces wav2letter++, a fast open-source deep learning speech recognition framework. wav2letter++ is written entirely in C++, and uses the ArrayFire tensor library for maximum efﬁciency. We explain the architecture and design of the wav2letter++ system and compare it to other major open-source speech recognition systems. In some cases wav2letter++ is more than 2× faster than other optimized frameworks for training end-to-end neural networks for speech recognition. We also show that wav2letter++ training times scale linearly to 64 GPUs, the most we tested, for models with 100 million parameters. High-performance frameworks enable fast iteration, which is often a crucial factor in successful research and model tuning on new datasets and tasks.},
+  eventtitle = {{{ICASSP}} 2019 - 2019 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  booktitle = {{{ICASSP}} 2019 - 2019 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  publisher = {{IEEE}},
+  date = {2019-05},
+  pages = {6460-6464},
+  author = {Pratap, Vineel and Hannun, Awni and Xu, Qiantong and Cai, Jeff and Kahn, Jacob and Synnaeve, Gabriel and Liptchinsky, Vitaliy and Collobert, Ronan},
+  file = {/Users/rolczynski/Documents/Library/2019/Pratap - 2019 - Wav2Letter++.pdf}
+}
+
+@article{gulcehre2015,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1503.03535},
+  title = {On {{Using Monolingual Corpora}} in {{Neural Machine Translation}}},
+  volume = {abs/1503.03535},
+  abstract = {Recent work on end-to-end neural network-based architectures for machine translation has shown promising results for En-Fr and En-De translation. Arguably, one of the major factors behind this success has been the availability of high quality parallel corpora. In this work, we investigate how to leverage abundant monolingual corpora for neural machine translation. Compared to a phrase-based and hierarchical baseline, we obtain up to \$1.96\$ BLEU improvement on the low-resource language pair Turkish-English, and \$1.59\$ BLEU on the focused domain task of Chinese-English chat messages. While our method was initially targeted toward such tasks with less parallel data, we show that it also extends to high resource languages such as Cs-En and De-En where we obtain an improvement of \$0.39\$ and \$0.47\$ BLEU scores over the neural machine translation baselines, respectively.},
+  journaltitle = {ArXiv},
+  date = {2015},
+  keywords = {Text corpus,Artificial neural network,Baseline (configuration management),BLEU,Display resolution,End-to-end principle,Neural machine translation,Parallel text},
+  author = {Gülçehre, Çaglar and Firat, Orhan and Xu, Kelvin and Cho, Kyunghyun and Barrault, Loïc and Lin, Huei-Chi and Bougares, Fethi and Schwenk, Holger and Bengio, Yoshua},
+  file = {/Users/rolczynski/Documents/Library/2015/Gülçehre - 2015 - On Using Monolingual Corpora in Neural Machine Translation.pdf}
+}
+
+@inproceedings{chorowski2016,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1612.02695},
+  title = {Towards Better Decoding and Language Model Integration in Sequence to Sequence Models},
+  doi = {10.21437/interspeech.2017-343},
+  abstract = {The recently proposed Sequence-to-Sequence (seq2seq) framework advocates replacing complex data processing pipelines, such as an entire automatic speech recognition system, with a single neural network trained in an end-to-end fashion. In this contribution, we analyse an attention-based seq2seq speech recognition system that directly transcribes recordings into characters. We observe two shortcomings: overconfidence in its predictions and a tendency to produce incomplete transcriptions when language models are used. We propose practical solutions to both problems achieving competitive speaker independent word error rates on the Wall Street Journal dataset: without separate language models we reach 10.6\% WER, while together with a trigram language model, we reach 6.7\% WER.},
+  booktitle = {{{INTERSPEECH}}},
+  date = {2016},
+  keywords = {Speech recognition,Artificial neural network,End-to-end principle,Language model,Pipeline (computing),The Wall Street Journal,Trigram,Word error rate},
+  author = {Chorowski, Jan and Jaitly, Navdeep},
+  file = {/Users/rolczynski/Documents/Library/2016/Chorowski - 2016 - Towards better decoding and language model integration in sequence to sequence.pdf}
+}
+
+@article{bahdanau2014,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1409.0473},
+  primaryClass = {cs, stat},
+  title = {Neural {{Machine Translation}} by {{Jointly Learning}} to {{Align}} and {{Translate}}},
+  url = {http://arxiv.org/abs/1409.0473},
+  abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
+  date = {2014-09-01},
+  keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning,Computer Science - Computation and Language},
+  author = {Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
+  file = {/Users/rolczynski/Documents/Library/2014/Bahdanau - 2014 - Neural Machine Translation by Jointly Learning to Align and Translate2.pdf;/Users/rolczynski/Zotero/storage/93YG2M6G/1409.html}
+}
+
+@article{el-geish2019,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1908.00493},
+  title = {Learning {{Joint Acoustic}}-{{Phonetic Word Embeddings}}},
+  volume = {abs/1908.00493},
+  abstract = {Most speech recognition tasks pertain to mapping words across two modalities: acoustic and orthographic. In this work, we suggest learning encoders that map variable-length, acoustic or phonetic, sequences that represent words into fixed-dimensional vectors in a shared latent space; such that the distance between two word vectors represents how closely the two words sound. Instead of directly learning the distances between word vectors, we employ weak supervision and model a binary classification task to predict whether two inputs, one of each modality, represent the same word given a distance threshold. We explore various deep-learning models, bimodal contrastive losses, and techniques for mining hard negative examples such as the semi-supervised technique of self-labeling. Our best model achieves an \$F\_1\$ score of 0.95 for the binary classification task.},
+  journaltitle = {ArXiv},
+  date = {2019},
+  keywords = {Speech recognition,Acoustic cryptanalysis,Binary classification,Deep learning,Encoder,Modality (human–computer interaction),Orthographic projection,Semi-supervised learning,Semiconductor industry,Word embedding},
+  author = {El-Geish, Mohamed},
+  file = {/Users/rolczynski/Documents/Library/2019/El-Geish - 2019 - Learning Joint Acoustic-Phonetic Word Embeddings.pdf}
+}
+
+@inproceedings{chaabouni2017,
+  langid = {english},
+  title = {Learning {{Weakly Supervised Multimodal Phoneme Embeddings}}},
+  url = {http://www.isca-speech.org/archive/Interspeech_2017/abstracts/1689.html},
+  abstract = {Recent works have explored deep architectures for learning multimodal speech representation (e.g. audio and images, articulation and audio) in a supervised way. Here we investigate the role of combining different speech modalities, i.e. audio and visual information representing the lips’ movements, in a weakly supervised way using Siamese networks and lexical same-different side information. In particular, we ask whether one modality can beneﬁt from the other to provide a richer representation for phone recognition in a weakly supervised setting. We introduce mono-task and multi-task methods for merging speech and visual modalities for phone recognition. The mono-task learning consists in applying a Siamese network on the concatenation of the two modalities, while the multi-task learning receives several different combinations of modalities at train time. We show that multi-task learning enhances discriminability for visual and multimodal inputs while minimally impacting auditory inputs. Furthermore, we present a qualitative analysis of the obtained phone embeddings, and show that cross-modal visual input can improve the discriminability of phonological features which are visually discernable (rounding, open/close, labial place of articulation), resulting in representations that are closer to abstract linguistic features than those based on audio only.},
+  eventtitle = {Interspeech 2017},
+  booktitle = {Interspeech 2017},
+  publisher = {{ISCA}},
+  date = {2017-08-20},
+  pages = {2218-2222},
+  author = {Chaabouni, Rahma and Dunbar, Ewan and Zeghidour, Neil and Dupoux, Emmanuel},
+  file = {/Users/rolczynski/Documents/Library/2017/Chaabouni - 2017 - Learning Weakly Supervised Multimodal Phoneme Embeddings.pdf}
+}
+
+@inproceedings{chung2018,
+  langid = {english},
+  title = {{{Speech2Vec}}: {{A Sequence}}-to-{{Sequence Framework}} for {{Learning Word Embeddings}} from {{Speech}}},
+  url = {http://www.isca-speech.org/archive/Interspeech_2018/abstracts/2341.html},
+  shorttitle = {{{Speech2Vec}}},
+  abstract = {In this paper, we propose a novel deep neural network architecture, Speech2Vec, for learning ﬁxed-length vector representations of audio segments excised from a speech corpus, where the vectors contain semantic information pertaining to the underlying spoken words, and are close to other vectors in the embedding space if their corresponding underlying spoken words are semantically similar. The proposed model can be viewed as a speech version of Word2Vec [1]. Its design is based on a RNN Encoder-Decoder framework, and borrows the methodology of skipgrams or continuous bag-of-words for training. Learning word embeddings directly from speech enables Speech2Vec to make use of the semantic information carried by speech that does not exist in plain text. The learned word embeddings are evaluated and analyzed on 13 widely used word similarity benchmarks, and outperform word embeddings learned by Word2Vec from the transcriptions.},
+  eventtitle = {Interspeech 2018},
+  booktitle = {Interspeech 2018},
+  publisher = {{ISCA}},
+  date = {2018-09-02},
+  pages = {811-815},
+  author = {Chung, Yu-An and Glass, James},
+  file = {/Users/rolczynski/Documents/Library/2018/Chung - 2018 - Speech2Vec.pdf}
+}
+
+@thesis{zeghidour2019,
+  langid = {english},
+  title = {Learning Representations of Speech from the Raw Waveform},
+  url = {https://tel.archives-ouvertes.fr/tel-02278616},
+  abstract = {While deep neural networks are now used in almost every component of a speech recognition system, from acoustic to language modeling, the input to such systems are still fixed, handcrafted, spectral features such as mel-filterbanks. This contrasts with computer vision, in which a deep neural network is now trained on raw pixels. Mel-filterbanks contain valuable and documented prior knowledge from human auditory perception as well as signal processing, and are the input to state-of-the-art speech recognition systems that are now on par with human performance in certain conditions. However, mel-filterbanks, as any fixed representation, are inherently limited by the fact that they are not fine-tuned for the task at hand. We hypothesize that learning the low-level representation of speech with the rest of the model, rather than using fixed features, could push the state-of-the art even further. We first explore a weakly-supervised setting and show that a single neural network can learn to separate phonetic information and speaker identity from mel-filterbanks or the raw waveform, and that these representations are robust across languages. Moreover, learning from the raw waveform provides significantly better speaker embeddings than learning from mel-filterbanks. These encouraging results lead us to develop a learnable alternative to mel-filterbanks, that can be directly used in replacement of these features. In the second part of this thesis we introduce Time-Domain filterbanks, a lightweight neural network that takes the waveform as input, can be initialized as an approximation of mel-filterbanks, and then learned with the rest of the neural architecture. Across extensive and systematic experiments, we show that Time-Domain filterbanks consistently outperform melfilterbanks and can be integrated into a new state-of-the-art speech recognition system, trained directly from the raw audio signal. Fixed speech features being also used for non-linguistic classification tasks for which they are even less optimal, we perform dysarthria detection from the waveform with Time-Domain filterbanks and show that it significantly improves over mel-filterbanks or low-level descriptors. Finally, we discuss how our contributions fall within a broader shift towards fully learnable audio understanding systems.},
+  date = {2019-03-13},
+  author = {Zeghidour, Neil},
+  file = {/Users/rolczynski/Documents/Library/2019/Zeghidour - 2019 - Learning representations of speech from the raw waveform2.pdf}
+}
+
+@article{rosenberg2019,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1909.11699},
+  primaryClass = {cs, eess},
+  title = {Speech {{Recognition}} with {{Augmented Synthesized Speech}}},
+  url = {http://arxiv.org/abs/1909.11699},
+  abstract = {Recent success of the Tacotron speech synthesis architecture and its variants in producing natural sounding multi-speaker synthesized speech has raised the exciting possibility of replacing expensive, manually transcribed, domain-specific, human speech that is used to train speech recognizers. The multi-speaker speech synthesis architecture can learn latent embedding spaces of prosody, speaker and style variations derived from input acoustic representations thereby allowing for manipulation of the synthesized speech. In this paper, we evaluate the feasibility of enhancing speech recognition performance using speech synthesis using two corpora from different domains. We explore algorithms to provide the necessary acoustic and lexical diversity needed for robust speech recognition. Finally, we demonstrate the feasibility of this approach as a data augmentation strategy for domain-transfer. We find that improvements to speech recognition performance is achievable by augmenting training data with synthesized material. However, there remains a substantial gap in performance between recognizers trained on human speech those trained on synthesized speech.},
+  date = {2019-09-25},
+  keywords = {Computer Science - Computation and Language,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  author = {Rosenberg, Andrew and Zhang, Yu and Ramabhadran, Bhuvana and Jia, Ye and Moreno, Pedro and Wu, Yonghui and Wu, Zelin},
+  file = {/Users/rolczynski/Documents/Library/2019/Rosenberg - 2019 - Speech Recognition with Augmented Synthesized Speech.pdf}
+}
+
+@inproceedings{jia2019,
+  title = {Leveraging {{Weakly Supervised Data}} to {{Improve End}}-to-End {{Speech}}-to-Text {{Translation}}},
+  doi = {10.1109/ICASSP.2019.8683343},
+  abstract = {End-to-end Speech Translation (ST) models have many potential advantages when compared to the cascade of Automatic Speech Recognition (ASR) and text Machine Translation (MT) models, including lowered inference latency and the avoidance of error compounding. However, the quality of end-to-end ST is often limited by a paucity of training data, since it is difficult to collect large parallel corpora of speech and translated transcript pairs. Previous studies have proposed the use of pre-trained components and multi-task learning in order to benefit from weakly supervised training data, such as speech-to-transcript or text-to-foreign-text pairs. In this paper, we demonstrate that using pre-trained MT or text-to-speech (TTS) synthesis models to convert weakly supervised data into speech-to-translation pairs for ST training can be more effective than multi-task learning. Furthermore, we demonstrate that a high quality end-to-end ST model can be trained using only weakly supervised datasets, and that synthetic data sourced from unlabeled monolingual text or speech can be used to improve performance. Finally, we discuss methods for avoiding overfitting to synthetic speech with a quantitative ablation study.},
+  eventtitle = {{{ICASSP}} 2019 - 2019 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  booktitle = {{{ICASSP}} 2019 - 2019 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  date = {2019-05},
+  pages = {7180-7184},
+  keywords = {speech recognition,learning (artificial intelligence),end-to-end speech-to-text translation,error compounding,high quality end-to-end ST model,language translation,multitask learning,pre-trained components,sequence-to-sequence model,Speech translation,speech-to-transcript,speech-to-translation pairs,ST training,synthetic data,synthetic speech,synthetic training data,text analysis,text-to-foreign-text pairs,text-to-speech synthesis models,translated transcript pairs,unlabeled monolingual text,weakly supervised data,weakly supervised datasets,weakly supervised learning,weakly supervised training data},
+  author = {Jia, Y. and Johnson, M. and Macherey, W. and Weiss, R. J. and Cao, Y. and Chiu, C. and Ari, N. and Laurenzo, S. and Wu, Y.},
+  file = {/Users/rolczynski/Documents/Library/2019/Jia - 2019 - Leveraging Weakly Supervised Data to Improve End-to-end Speech-to-text.pdf}
+}
+
+@article{li2019,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1904.03288},
+  primaryClass = {cs, eess},
+  title = {Jasper: {{An End}}-to-{{End Convolutional Neural Acoustic Model}}},
+  url = {http://arxiv.org/abs/1904.03288},
+  shorttitle = {Jasper},
+  abstract = {In this paper, we report state-of-the-art results on LibriSpeech among end-to-end speech recognition models without any external training data. Our model, Jasper, uses only 1D convolutions, batch normalization, ReLU, dropout, and residual connections. To improve training, we further introduce a new layer-wise optimizer called NovoGrad. Through experiments, we demonstrate that the proposed deep architecture performs as well or better than more complex choices. Our deepest Jasper variant uses 54 convolutional layers. With this architecture, we achieve 2.95\% WER using a beam-search decoder with an external neural language model and 3.86\% WER with a greedy decoder on LibriSpeech test-clean. We also report competitive results on the Wall Street Journal and the Hub5'00 conversational evaluation datasets.},
+  date = {2019},
+  keywords = {Computer Science - Machine Learning,Computer Science - Computation and Language,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  author = {Li, Jason and Lavrukhin, Vitaly and Ginsburg, Boris and Leary, Ryan and Kuchaiev, Oleksii and Cohen, Jonathan M. and Nguyen, Huyen and Gadde, Ravi Teja},
+  file = {/Users/rolczynski/Documents/Library/2019/Li - 2019 - Jasper.pdf}
+}
+
+@article{kuchaiev2018,
+  title = {{{OpenSeq2Seq}}: Extensible Toolkit for Distributed and Mixed Precision Training of Sequence-to-Sequence Models},
+  volume = {abs/1805.10387},
+  doi = {10.18653/v1/w18-2507},
+  shorttitle = {{{OpenSeq2Seq}}},
+  abstract = {We present OpenSeq2Seq -- an open-source toolkit for training sequence-to-sequence models. The main goal of our toolkit is to allow researchers to most effectively explore different sequence-to-sequence architectures. The efficiency is achieved by fully supporting distributed and mixed-precision training. OpenSeq2Seq provides building blocks for training encoder-decoder models for neural machine translation and automatic speech recognition. We plan to extend it with other modalities in the future.},
+  journaltitle = {ArXiv},
+  date = {2018},
+  keywords = {Speech recognition,Experiment,Neural machine translation,Language model,Deep learning,Encoder,GeForce,Graphics processing unit,Memory footprint,Natural language processing,Open-source software,Single-precision floating-point format,Transformer,Volta},
+  author = {Kuchaiev, Oleksii and Ginsburg, Boris and Gitman, Igor and Lavrukhin, Vitaly and Case, Carl and Micikevicius, Paulius},
+  file = {/Users/rolczynski/Documents/Library/2018/Kuchaiev - 2018 - OpenSeq2Seq.pdf}
+}
+
+@article{stevens1937,
+  title = {A Scale for the Measurement of the Psychological Magnitude Pitch},
+  volume = {8},
+  issn = {0001-4966(Print)},
+  doi = {10.1121/1.1915893},
+  abstract = {A subjective scale for the measurement of pitch was constructed from determinations of the half-value of pitches at various frequencies. This scale differs from both the musical scale and the frequency scale, neither of which is subjective. Five observers fractionated tones of 10 different frequencies and the values were used to construct a numerical scale which is proportional to the perceived magnitude of subjective pitch. The close agreement of this pitch scale with an integration of the DL's for pitch shows that, unlike the DL's for loudness, all DL's for pitch are of uniform subjective magnitude. The agreement further implies that pitch and differential sensitivity to pitch are both rectilinear functions of extent on the basilar membrane, and that in cutting a pitch in half, the observer adjusts the tone until it stimulates a position half-way from the original locus to the apical end of the membrane. Measurement of the subjective size of musical intervals (such as octaves) in terms of the pitch scale shows that the intervals become larger as the frequency of the midpoint of the interval increases (except for very high tones). (PsycINFO Database Record (c) 2016 APA, all rights reserved)},
+  journaltitle = {Journal of the Acoustical Society of America},
+  date = {1937},
+  pages = {185-190},
+  author = {Stevens, S. S. and Volkmann, J. and Newman, E. B.},
+  file = {/Users/rolczynski/Documents/Library/1937/Stevens - 1937 - A scale for the measurement of the psychological magnitude pitch.pdf}
+}
+
+@article{harris1978,
+  langid = {english},
+  title = {On Then {{Use}} of {{Windows}} for {{Harmonic Analysis}} with the {{Discrete Fourier Transform}}},
+  date = {1978},
+  pages = {33},
+  author = {Harris, J},
+  file = {/Users/rolczynski/Documents/Library/1978/Harris - 1978 - On then Use of Windows for Harmonic Analysis with the Discrete Fourier Transform.pdf}
+}
+
+@article{hannun2017,
+  langid = {english},
+  title = {Sequence {{Modeling}} with {{CTC}}},
+  volume = {2},
+  issn = {2476-0757},
+  url = {https://distill.pub/2017/ctc},
+  abstract = {A visual guide to Connectionist Temporal Classification, an algorithm used to train deep neural networks in speech recognition, handwriting recognition and other sequence problems.},
+  number = {11},
+  journaltitle = {Distill},
+  shortjournal = {Distill},
+  date = {2017-11-27},
+  pages = {e8},
+  author = {Hannun, Awni},
+  file = {/Users/rolczynski/Zotero/storage/EPV7QRA2/ctc.html}
+}
+
+@article{sahidullah2012,
+  title = {Design, Analysis and Experimental Evaluation of Block Based Transformation in {{MFCC}} Computation for Speaker Recognition},
+  volume = {54},
+  issn = {0167-6393},
+  url = {http://www.sciencedirect.com/science/article/pii/S0167639311001622},
+  abstract = {Standard Mel frequency cepstrum coefficient (MFCC) computation technique utilizes discrete cosine transform (DCT) for decorrelating log energies of filter bank output. The use of DCT is reasonable here as the covariance matrix of Mel filter bank log energy (MFLE) can be compared with that of highly correlated Markov-I process. This full-band based MFCC computation technique where each of the filter bank output has contribution to all coefficients, has two main disadvantages. First, the covariance matrix of the log energies does not exactly follow Markov-I property. Second, full-band based MFCC feature gets severely degraded when speech signal is corrupted with narrow-band channel noise, though few filter bank outputs may remain unaffected. In this work, we have studied a class of linear transformation techniques based on block wise transformation of MFLE which effectively decorrelate the filter bank log energies and also capture speech information in an efficient manner. A thorough study has been carried out on the block based transformation approach by investigating a new partitioning technique that highlights associated advantages. This article also reports a novel feature extraction scheme which captures complementary information to wide band information; that otherwise remains undetected by standard MFCC and proposed block transform (BT) techniques. The proposed features are evaluated on NIST SRE databases using Gaussian mixture model-universal background model (GMM-UBM) based speaker recognition system. We have obtained significant performance improvement over baseline features for both matched and mismatched condition, also for standard and narrow-band noises. The proposed method achieves significant performance improvement in presence of narrow-band noise when clubbed with missing feature theory based score computation scheme.},
+  number = {4},
+  journaltitle = {Speech Communication},
+  shortjournal = {Speech Communication},
+  date = {2012-05-01},
+  pages = {543-565},
+  keywords = {Speaker recognition,Block transform,Correlation matrix,DCT,Decorrelation technique,Linear transformation,MFCC,Missing feature theory,Narrow-band noise},
+  author = {Sahidullah, Md. and Saha, Goutam},
+  file = {/Users/rolczynski/Documents/Library/2012/Sahidullah - 2012 - Design, analysis and experimental evaluation of block based transformation in.pdf}
+}
+
+@inproceedings{varadi2008,
+  location = {{Marrakech, Morocco}},
+  title = {{{CLARIN}}: {{Common Language Resources}} and {{Technology Infrastructure}}},
+  shorttitle = {{{CLARIN}}},
+  eventtitle = {{{LREC}} 2008},
+  booktitle = {Proceedings of the {{Sixth International Conference}} on {{Language Resources}} and {{Evaluation}} ({{LREC}}'08)},
+  publisher = {{European Languages Resources Association (ELRA)}},
+  date = {2008-05},
+  author = {Váradi, Tamás and Krauwer, Steven and Wittenburg, Peter and Wynne, Martin and Koskenniemi, Kimmo},
+  file = {/Users/rolczynski/Documents/Library/2008/Váradi - 2008 - CLARIN.pdf}
+}
+
+@article{oord2016,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1609.03499},
+  primaryClass = {cs},
+  title = {{{WaveNet}}: {{A Generative Model}} for {{Raw Audio}}},
+  url = {http://arxiv.org/abs/1609.03499},
+  shorttitle = {{{WaveNet}}},
+  abstract = {This paper introduces WaveNet, a deep neural network for generating raw audio waveforms. The model is fully probabilistic and autoregressive, with the predictive distribution for each audio sample conditioned on all previous ones; nonetheless we show that it can be efficiently trained on data with tens of thousands of samples per second of audio. When applied to text-to-speech, it yields state-of-the-art performance, with human listeners rating it as significantly more natural sounding than the best parametric and concatenative systems for both English and Mandarin. A single WaveNet can capture the characteristics of many different speakers with equal fidelity, and can switch between them by conditioning on the speaker identity. When trained to model music, we find that it generates novel and often highly realistic musical fragments. We also show that it can be employed as a discriminative model, returning promising results for phoneme recognition.},
+  date = {2016-09-12},
+  keywords = {Computer Science - Machine Learning,Computer Science - Sound},
+  author = {family=Oord, given=Aaron, prefix=van den, useprefix=false and Dieleman, Sander and Zen, Heiga and Simonyan, Karen and Vinyals, Oriol and Graves, Alex and Kalchbrenner, Nal and Senior, Andrew and Kavukcuoglu, Koray},
+  file = {/Users/rolczynski/Documents/Library/2016/Oord - 2016 - WaveNet.pdf}
+}
+
+@collection{ogr:kob:18:poleval,
+  location = {{Warsaw, Poland}},
+  title = {Proceedings of the {{PolEval}} 2018 {{Workshop}} ({{Task}} 3: {{Language Models}})},
+  isbn = {978-83-63159-27-6},
+  url = {http://2018.poleval.pl/index.php/tasks/},
+  publisher = {{Institute of Computer Science, Polish Academy of Sciences}},
+  date = {2018},
+  editor = {Ogrodniczuk, Maciej and Kobyliński, Łukasz}
+}
+
+@inproceedings{ko2015,
+  title = {Audio Augmentation for Speech Recognition},
+  abstract = {Data augmentation is a common strategy adopted to increase the quantity of training data, avoid overfitting and improve robustness of the models. In this paper, we investigate audio-level speech augmentation methods which directly process the raw signal. The method we particularly recommend is to change the speed of the audio signal, producing 3 versions of the original signal with speed factors of 0.9, 1.0 and 1.1. The proposed technique has a low implementation cost, making it easy to adopt. We present results on 4 different LVCSR tasks with training data ranging from 100 hours to 1000 hours, to examine the effectiveness of audio augmentation in a variety of data scenarios. An average relative improvement of 4.3\% was observed across the 4 tasks.},
+  booktitle = {{{INTERSPEECH}}},
+  date = {2015},
+  keywords = {Overfitting,Speech analytics,Speech recognition},
+  author = {Ko, Tom and Peddinti, Vijayaditya and Povey, Daniel and Khudanpur, Sanjeev},
+  file = {/Users/rolczynski/Documents/Library/2015/Ko - 2015 - Audio augmentation for speech recognition.pdf}
+}
+
+@inproceedings{kanda2013,
+  title = {Elastic Spectral Distortion for Low Resource Speech Recognition with Deep Neural Networks},
+  doi = {10.1109/ASRU.2013.6707748},
+  abstract = {An acoustic model based on hidden Markov models with deep neural networks (DNN-HMM) has recently been proposed and achieved high recognition accuracy. In this paper, we investigated an elastic spectral distortion method to artificially augment training samples to help DNN-HMMs acquire enough robustness even when there are a limited number of training samples. We investigated three distortion methods - vocal tract length distortion, speech rate distortion, and frequency-axis random distortion - and evaluated those methods with Japanese lecture recordings. In a large vocabulary continuous speech recognition task with only 10 hours of training samples, a DNN-HMM trained with the elastic spectral distortion method achieved a 10.1\% relative word error reduction compared with a normally trained DNN-HMM.},
+  eventtitle = {2013 {{IEEE Workshop}} on {{Automatic Speech Recognition}} and {{Understanding}}},
+  booktitle = {2013 {{IEEE Workshop}} on {{Automatic Speech Recognition}} and {{Understanding}}},
+  date = {2013-12},
+  pages = {309-314},
+  keywords = {Accuracy,Acoustic distortion,acoustic model,acoustic signal processing,Acoustics,artificially training sample augmentation,Deep neural network,deep neural networks,elastic distortion,elastic spectral distortion method,frequency-axis random distortion,hidden Markov models,Hidden Markov models,Japanese lecture recordings,low resource speech recognition,neural nets,normally trained DNN-HMM,spectral analysis,Speech,speech rate distortion,speech recognition,Speech recognition,Training,vocabulary continuous speech recognition task,vocal tract length distortion},
+  author = {Kanda, N. and Takeda, R. and Obuchi, Y.},
+  file = {/Users/rolczynski/Zotero/storage/77S7PCMY/6707748.html}
+}
+
+@inproceedings{ragni2014,
+  title = {Data Augmentation for Low Resource Languages},
+  abstract = {Recently there has been interest in the approaches for training speech recognition systems for languages with limited resources. Under the IARPA Babel program such resources have been provided for a range of languages to support this research area. This paper examines a particular form of approach, data augmentation, that can be applied to these situations. Data augmentation schemes aim to increase the quantity of data available to train the system, for example semi-supervised training, multilingual processing, acoustic data perturbation and speech synthesis. To date the majority of work has considered individual data augmentation schemes, with few consistent performance contrasts or examination of whether the schemes are complementary. In this work two data augmentation schemes, semisupervised training and vocal tract length perturbation, are examined and combined on the Babel limited language pack configuration. Here only about 10 hours of transcribed acoustic data are available. Two languages are examined, Assamese and Zulu, which were found to be the most challenging of the Babel languages released for the 2014 Evaluation. For both languages consistent speech recognition performance gains can be obtained using these augmentation schemes. Furthermore the impact of these performance gains on a down-stream keyword spotting task are also described. Index Terms: data augmentation, speech recognition, babel},
+  booktitle = {{{INTERSPEECH}}},
+  date = {2014},
+  keywords = {Acoustic cryptanalysis,Convolutional neural network,Semi-supervised learning,Semiconductor industry,Speech recognition,Speech synthesis,Tract (literature)},
+  author = {Ragni, Anton and Knill, Kate and Rath, Shakti P. and Gales, Mark John Francis},
+  file = {/Users/rolczynski/Documents/Library/2014/Ragni - 2014 - Data augmentation for low resource languages.pdf}
+}
+
+@article{mikolov2013,
+  title = {Distributed {{Representations}} of {{Words}} and {{Phrases}} and Their {{Compositionality}}},
+  url = {http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf},
+  journaltitle = {Advances in Neural Information Processing Systems 26},
+  urldate = {2019-10-11},
+  date = {2013},
+  pages = {3111--3119},
+  author = {Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado, Greg S and Dean, Jeff},
+  editor = {Burges, C. J. C. and Bottou, L. and Welling, M. and Ghahramani, Z. and Weinberger, K. Q.},
+  file = {/Users/rolczynski/Documents/Library/2013/Mikolov - 2013 - Distributed Representations of Words and Phrases and their Compositionality.pdf;/Users/rolczynski/Zotero/storage/RJMWPY7N/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.html}
+}
+
+@inproceedings{peters2018,
+  location = {{New Orleans, Louisiana}},
+  title = {Deep {{Contextualized Word Representations}}},
+  doi = {10.18653/v1/N18-1202},
+  abstract = {We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.},
+  eventtitle = {{{NAACL}}-{{HLT}} 2018},
+  booktitle = {Proceedings of the 2018 {{Conference}} of the {{North American Chapter}} of the {{Association}} for {{Computational Linguistics}}: {{Human Language Technologies}}, {{Volume}} 1 ({{Long Papers}})},
+  publisher = {{Association for Computational Linguistics}},
+  date = {2018-06},
+  pages = {2227--2237},
+  author = {Peters, Matthew and Neumann, Mark and Iyyer, Mohit and Gardner, Matt and Clark, Christopher and Lee, Kenton and Zettlemoyer, Luke},
+  file = {/Users/rolczynski/Documents/Library/2018/Peters - 2018 - Deep Contextualized Word Representations2.pdf}
+}
+
+@inproceedings{howard2018,
+  location = {{Melbourne, Australia}},
+  title = {Universal {{Language Model Fine}}-Tuning for {{Text Classification}}},
+  doi = {10.18653/v1/P18-1031},
+  abstract = {Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18-24\% on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100 times more data. We open-source our pretrained models and code.},
+  eventtitle = {{{ACL}} 2018},
+  booktitle = {Proceedings of the 56th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}} ({{Volume}} 1: {{Long Papers}})},
+  publisher = {{Association for Computational Linguistics}},
+  date = {2018-07},
+  pages = {328--339},
+  author = {Howard, Jeremy and Ruder, Sebastian},
+  file = {/Users/rolczynski/Documents/Library/2018/Howard - 2018 - Universal Language Model Fine-tuning for Text Classification2.pdf}
+}
+
+@inproceedings{devlin2019,
+  archivePrefix = {arXiv},
+  eprinttype = {arxiv},
+  eprint = {1810.04805},
+  title = {{{BERT}}: {{Pre}}-Training of {{Deep Bidirectional Transformers}} for {{Language Understanding}}},
+  shorttitle = {{{BERT}}},
+  abstract = {We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. 
+BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5\% (7.7\% point absolute improvement), MultiNLI accuracy to 86.7\% (4.6\% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).},
+  booktitle = {{{NAACL}}-{{HLT}}},
+  date = {2019},
+  keywords = {Benchmark (computing),Bi-directional text,Encoder,Human reliability,Natural language processing,Natural language understanding,Question answering,Transformers},
+  author = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  file = {/Users/rolczynski/Documents/Library/2019/Devlin - 2019 - BERT.pdf}
+}
+
+@online{ryan2016,
+  title = {Around the {{World}} in 60 {{Days}}: {{Getting Deep Speech}} to {{Work}} in {{Mandarin}}},
+  url = {https://svail.github.io/mandarin/},
+  date = {2016},
+  author = {Ryan, J. Prenger},
+  file = {/Users/rolczynski/Zotero/storage/QHS36SVG/mandarin.html}
+}
+
+@inproceedings{dahl2011,
+  title = {Large Vocabulary Continuous Speech Recognition with Context-Dependent {{DBN}}-{{HMMS}}},
+  doi = {10.1109/ICASSP.2011.5947401},
+  abstract = {The context-independent deep belief network (DBN) hidden Markov model (HMM) hybrid architecture has recently achieved promising results for phone recognition. In this work, we propose a context-dependent DBN-HMM system that dramatically outperforms strong Gaussian mixture model (GMM)-HMM baselines on a challenging, large vocabulary, spontaneous speech recognition dataset from the Bing mobile voice search task. Our system achieves absolute sentence accuracy improvements of 5.8\% and 9.2\% over GMM-HMMs trained using the minimum phone error rate (MPE) and maximum likelihood (ML) criteria, respectively, which translate to relative error reductions of 16.0\% and 23.2\%.},
+  eventtitle = {2011 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  booktitle = {2011 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  date = {2011-05},
+  pages = {4688-4691},
+  keywords = {Accuracy,Acoustics,Artificial neural networks,belief networks,Bing mobile voice search task,context-dependent DBN-HMMS,context-dependent phone,context-independent deep belief network,DBN-HMM,deep belief network,Gaussian distribution,Gaussian mixture model,hidden Markov model hybrid architecture,hidden Markov models,Hidden Markov models,large vocabulary continuous speech recognition,LVCSR,maximum likelihood criteria,minimum phone error rate,ML criteria,MPE,speech recognition,Speech recognition,Training,Vocabulary},
+  author = {Dahl, G. E. and Yu, D. and Deng, L. and Acero, A.},
+  file = {/Users/rolczynski/Documents/Library/2011/Dahl - 2011 - Large vocabulary continuous speech recognition with context-dependent DBN-HMMS.pdf}
+}
+
+@inproceedings{ghoshal2013,
+  title = {Sequence Discriminative Training of Deep Neural Networks},
+  abstract = {Sequence-discriminative training of deep neural networks (DNNs) is investigated on a 300 hour American English conversational telephone speech task. Different sequencediscriminative criteria — maximum mutual information (MMI), minimum phone error (MPE), state-level minimum Bayes risk (sMBR), and boosted MMI — are compared. Two different heuristics are investigated to improve the performance of the DNNs trained using sequence-based criteria — lattices are regenerated after the first iteration of training; and, for MMI and BMMI, the frames where the numerator and denominator hypotheses are disjoint are removed from the gradient computation. Starting from a competitive DNN baseline trained using cross-entropy, different sequence-discriminative criteria are shown to lower word error rates by 8-9 \% relative, on average. Little difference is noticed between the different sequencebased criteria that are investigated. The experiments are done using the open-source Kaldi toolkit, which makes it possible for the wider community to reproduce these results. Index Terms: speech recognition, deep learning, sequencecriterion training, neural networks, reproducible research},
+  booktitle = {In {{Proc}}. {{INTERSPEECH}}},
+  date = {2013},
+  author = {Ghoshal, Arnab and Povey, Daniel},
+  file = {/Users/rolczynski/Documents/Library/2013/Ghoshal - 2013 - Sequencediscriminative training of deep neural networks.pdf}
+}
+
+@inproceedings{abdel-hamid2012,
+  title = {Applying {{Convolutional Neural Networks}} Concepts to Hybrid {{NN}}-{{HMM}} Model for Speech Recognition},
+  doi = {10.1109/ICASSP.2012.6288864},
+  abstract = {Convolutional Neural Networks (CNN) have showed success in achieving translation invariance for many image processing tasks. The success is largely attributed to the use of local filtering and max-pooling in the CNN architecture. In this paper, we propose to apply CNN to speech recognition within the framework of hybrid NN-HMM model. We propose to use local filtering and max-pooling in frequency domain to normalize speaker variance to achieve higher multi-speaker speech recognition performance. In our method, a pair of local filtering layer and max-pooling layer is added at the lowest end of neural network (NN) to normalize spectral variations of speech signals. In our experiments, the proposed CNN architecture is evaluated in a speaker independent speech recognition task using the standard TIMIT data sets. Experimental results show that the proposed CNN method can achieve over 10\% relative error reduction in the core TIMIT test sets when comparing with a regular NN using the same number of hidden layers and weights. Our results also show that the best result of the proposed CNN model is better than previously published results on the same TIMIT test sets that use a pre-trained deep NN model.},
+  eventtitle = {2012 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  booktitle = {2012 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  date = {2012-03},
+  pages = {4277-4280},
+  keywords = {acoustic modeling,Acoustics,Artificial neural networks,convolution,Convolution,convolutional neural network,filtering theory,frequency domain,hidden Markov models,Hidden Markov models,hybrid neural network-hidden Markov model,local filtering,max-pooling,neural nets,neural networks,Speech,speech recognition,Speech recognition,standard TIMIT data set,Training},
+  author = {Abdel-Hamid, O. and Mohamed, A. and Jiang, H. and Penn, G.},
+  file = {/Users/rolczynski/Documents/Library/2012/Abdel-Hamid - 2012 - Applying Convolutional Neural Networks concepts to hybrid NN-HMM model for.pdf}
+}
+
+@inproceedings{sainath2013,
+  title = {Deep Convolutional Neural Networks for {{LVCSR}}},
+  doi = {10.1109/ICASSP.2013.6639347},
+  abstract = {Convolutional Neural Networks (CNNs) are an alternative type of neural network that can be used to reduce spectral variations and model spectral correlations which exist in signals. Since speech signals exhibit both of these properties, CNNs are a more effective model for speech compared to Deep Neural Networks (DNNs). In this paper, we explore applying CNNs to large vocabulary speech tasks. First, we determine the appropriate architecture to make CNNs effective compared to DNNs for LVCSR tasks. Specifically, we focus on how many convolutional layers are needed, what is the optimal number of hidden units, what is the best pooling strategy, and the best input feature type for CNNs. We then explore the behavior of neural network features extracted from CNNs on a variety of LVCSR tasks, comparing CNNs to DNNs and GMMs. We find that CNNs offer between a 13-30\% relative improvement over GMMs, and a 4-12\% relative improvement over DNNs, on a 400-hr Broadcast News and 300-hr Switchboard task.},
+  eventtitle = {2013 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}}},
+  booktitle = {2013 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}}},
+  date = {2013-05},
+  pages = {8614-8618},
+  keywords = {Acoustics,broadcast news,CNN,Convolution,convolutional layers,correlation methods,deep convolutional neural networks,DNN,Hidden Markov models,hidden units,large vocabulary continuous speech recognition,LVCSR tasks,neural nets,Neural networks,Neural Networks,pooling strategy,spectral correlations model,spectral variations reduction,Speech,speech recognition,Speech recognition,Speech Recognition,speech signals,switchboard task,time 300 hr,time 400 hr,Training},
+  author = {Sainath, T. N. and Mohamed, A. and Kingsbury, B. and Ramabhadran, B.},
+  file = {/Users/rolczynski/Documents/Library/2013/Sainath - 2013 - Deep convolutional neural networks for LVCSR.pdf;/Users/rolczynski/Zotero/storage/LFDBSBTQ/6639347.html}
+}
+
+@inproceedings{soltau2014,
+  title = {Joint Training of Convolutional and Non-Convolutional Neural Networks},
+  doi = {10.1109/ICASSP.2014.6854669},
+  abstract = {We describe a simple modification of neural networks which consists in extending the commonly used linear layer structure to an arbitrary graph structure. This allows us to combine the benefits of convolutional neural networks with the benefits of regular networks. The joint model has only a small increase in parameter size and training and decoding time are virtually unaffected. We report significant improvements over very strong baselines on two LVCSR tasks and one speech activity detection task.},
+  eventtitle = {2014 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  booktitle = {2014 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  date = {2014-05},
+  pages = {5572-5576},
+  keywords = {Acoustic Modeling,Acoustics,arbitrary graph structure,CNN,convolutional codes,convolutional neural networks,decoding,decoding time,Error analysis,Hidden Markov models,joint training,Joints,linear layer structure,LVCSR tasks,MLP,neural nets,Neural networks,Neural Networks,nonconvolutional neural networks,regular networks,Speech,speech activity detection task,Training},
+  author = {Soltau, H. and Saon, G. and Sainath, T. N.},
+  file = {/Users/rolczynski/Zotero/storage/6VUKHAEA/6854669.html}
+}
+
+@article{hochreiter1997,
+  title = {Long {{Short}}-{{Term Memory}}},
+  volume = {9},
+  issn = {0899-7667},
+  url = {http://dx.doi.org/10.1162/neco.1997.9.8.1735},
+  abstract = {Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.},
+  number = {8},
+  journaltitle = {Neural Comput.},
+  urldate = {2019-10-11},
+  date = {1997-11},
+  pages = {1735--1780},
+  author = {Hochreiter, Sepp and Schmidhuber, Jürgen},
+  file = {/Users/rolczynski/Documents/Library/1997/Hochreiter - 1997 - Long Short-Term Memory.pdf}
+}
+
+@online{olah2015,
+  title = {Understanding {{LSTM Networks}}},
+  url = {https://colah.github.io/posts/2015-08-Understanding-LSTMs/},
+  date = {2015},
+  author = {Olah, Christopher},
+  file = {/Users/rolczynski/Zotero/storage/2PB6EFFG/2015-08-Understanding-LSTMs.html}
+}
+
+@inproceedings{folk2011,
+  location = {{New York, NY, USA}},
+  title = {An {{Overview}} of the {{HDF5 Technology Suite}} and {{Its Applications}}},
+  isbn = {978-1-4503-0614-0},
+  url = {http://doi.acm.org/10.1145/1966895.1966900},
+  abstract = {In this paper, we give an overview of the HDF5 technology suite and some of its applications. We discuss the HDF5 data model, the HDF5 software architecture and some of its performance enhancing capabilities.},
+  booktitle = {Proceedings of the {{EDBT}}/{{ICDT}} 2011 {{Workshop}} on {{Array Databases}}},
+  series = {{{AD}} '11},
+  publisher = {{ACM}},
+  date = {2011},
+  pages = {36--47},
+  keywords = {data management,data models,databases,HDF5},
+  author = {Folk, Mike and Heber, Gerd and Koziol, Quincey and Pourmal, Elena and Robinson, Dana},
+  venue = {Uppsala, Sweden}
+}
+
+@inproceedings{abadi2016,
+  location = {{Berkeley, CA, USA}},
+  title = {{{TensorFlow}}: {{A System}} for {{Large}}-Scale {{Machine Learning}}},
+  isbn = {978-1-931971-33-1},
+  url = {http://dl.acm.org/citation.cfm?id=3026877.3026899},
+  shorttitle = {{{TensorFlow}}},
+  abstract = {TensorFlow is a machine learning system that operates at large scale and in heterogeneous environments. Tensor-Flow uses dataflow graphs to represent computation, shared state, and the operations that mutate that state. It maps the nodes of a dataflow graph across many machines in a cluster, and within a machine across multiple computational devices, including multicore CPUs, general-purpose GPUs, and custom-designed ASICs known as Tensor Processing Units (TPUs). This architecture gives flexibility to the application developer: whereas in previous "parameter server" designs the management of shared state is built into the system, TensorFlow enables developers to experiment with novel optimizations and training algorithms. TensorFlow supports a variety of applications, with a focus on training and inference on deep neural networks. Several Google services use TensorFlow in production, we have released it as an open-source project, and it has become widely used for machine learning research. In this paper, we describe the TensorFlow dataflow model and demonstrate the compelling performance that TensorFlow achieves for several real-world applications.},
+  booktitle = {Proceedings of the 12th {{USENIX Conference}} on {{Operating Systems Design}} and {{Implementation}}},
+  series = {{{OSDI}}'16},
+  publisher = {{USENIX Association}},
+  urldate = {2019-10-11},
+  date = {2016},
+  pages = {265--283},
+  author = {Abadi, Martín and Barham, Paul and Chen, Jianmin and Chen, Zhifeng and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Irving, Geoffrey and Isard, Michael and Kudlur, Manjunath and Levenberg, Josh and Monga, Rajat and Moore, Sherry and Murray, Derek G. and Steiner, Benoit and Tucker, Paul and Vasudevan, Vijay and Warden, Pete and Wicke, Martin and Yu, Yuan and Zheng, Xiaoqiang},
+  venue = {Savannah, GA, USA}
+}
+
+@article{srivastava2014,
+  title = {Dropout: {{A Simple Way}} to {{Prevent Neural Networks}} from {{Overfitting}}},
+  volume = {15},
+  url = {http://jmlr.org/papers/v15/srivastava14a.html},
+  shorttitle = {Dropout},
+  journaltitle = {Journal of Machine Learning Research},
+  date = {2014},
+  pages = {1929-1958},
+  author = {Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+  file = {/Users/rolczynski/Documents/Library/2014/Srivastava - 2014 - Dropout.pdf}
+}
+
+@inproceedings{ioffe2015,
+  title = {Batch {{Normalization}}: {{Accelerating Deep Network Training}} by {{Reducing Internal Covariate Shift}}},
+  url = {http://dl.acm.org/citation.cfm?id=3045118.3045167},
+  shorttitle = {Batch {{Normalization}}},
+  abstract = {Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization, and in some cases eliminates the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.82\% top-5 test error, exceeding the accuracy of human raters.},
+  booktitle = {Proceedings of the {{32Nd International Conference}} on {{International Conference}} on {{Machine Learning}} - {{Volume}} 37},
+  series = {{{ICML}}'15},
+  publisher = {{JMLR.org}},
+  urldate = {2019-10-11},
+  date = {2015},
+  pages = {448--456},
+  author = {Ioffe, Sergey and Szegedy, Christian},
+  file = {/Users/rolczynski/Documents/Library/2015/Ioffe - 2015 - Batch Normalization.pdf},
+  venue = {Lille, France}
+}
+
+
