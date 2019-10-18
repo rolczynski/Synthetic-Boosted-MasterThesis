@@ -3,11 +3,6 @@ import numpy as np
 from matplotlib import pyplot as plt
 plt.rc('text', usetex=True)
 plt.rc('font', family='serif')
-# import seaborn as sns
-# cmap = plt.get_cmap('YlGnBu')
-# linear = sns.color_palette("YlGnBu")
-# sns.palplot(linear)
-# plt.show()
 
 
 def load(file_path: str):

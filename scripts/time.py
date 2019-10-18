@@ -1,7 +1,4 @@
-import h5py
 import numpy as np
-import pandas as pd
-import seaborn as sns
 import numpy.polynomial.polynomial as poly
 from matplotlib import pyplot as plt
 plt.rc('text', usetex=True)
